@@ -38,6 +38,9 @@ namespace ProductApps
                 totalChargeTextBlock.Text = totalCharge.ToString();
                 decimal total = cProduct.TotalPayment + 25.00m + 5.00m;
                 totalTextBlock.Text = total.ToString();
+                decimal  totalPay = total * 1.1m;
+                totalPayTextBlock.Text = totalPay.ToString();
+               
 
             }
             catch (FormatException)
@@ -54,6 +57,7 @@ namespace ProductApps
             totalPaymentTextBlock.Text = "";
             totalChargeTextBlock.Text = "";
             totalTextBlock.Text = "";
+            totalPayTextBlock.Text = "";
 
         }
 
